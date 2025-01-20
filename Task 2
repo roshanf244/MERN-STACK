@@ -1,0 +1,45 @@
+ // Task 6: Multi-line and single-line comments
+        
+        // Single-line comment: Used for brief notes or explanations.
+        
+        /*
+        Multi-line comment:
+        Used for detailed explanations or to temporarily disable code.
+        */
+        
+        // Task 7: Semicolon-separated and non-separated lines
+        console.log("Task 7:");
+        let a = 5; let b = 10; console.log("Semicolon-separated sum:", a + b);
+        
+        let x = 20
+        let y = 30
+        console.log("Non-separated sum:", x + y);
+        
+        // Task 8: Properly formatted nested loop
+        console.log("Task 8:");
+        for (let i = 1; i <= 3; i++) {
+            console.log(`Outer loop iteration: ${i}`);
+            for (let j = 1; j <= 2; j++) {
+                console.log(`  Inner loop iteration: ${j}`);
+            }
+        }
+        
+        // Task 9: Declare multiple variables in a single line
+        let personName = "Alice", age = 25, isStudent = true, city = "New York";
+        console.log("Task 9: Multiple Variables:");
+        console.log(personName, age, isStudent, city);
+        
+        // Task 10: Script placement in HTML
+        console.log("Task 10:");
+        console.log(`
+        Script Placement in HTML:
+        
+        1. Placing a script at the top may cause errors if it tries to access
+           DOM elements that haven't been loaded yet.
+        
+        2. Placing a script at the bottom ensures all DOM elements are available
+           before the script runs.
+           
+        
+        `);
+        
