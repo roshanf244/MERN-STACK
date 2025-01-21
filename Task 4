@@ -1,0 +1,36 @@
+// Task 16: Declare variables using let, const, and var, and discuss when each should be used
+let myLetVariable = "This is a let variable";  
+const myConstVariable = "This is a const variable"; 
+var myVarVariable = "This is a var variable";  
+console.log(myLetVariable); 
+console.log(myConstVariable); 
+console.log(myVarVariable);
+
+
+// Task 17: Attempt to reassign a const variable
+try {
+  myConstVariable = "Attempting reassignment"; 
+} catch (error) {
+  console.log("Error:", error.message);  
+}
+
+// Task 18: Declare a variable without initializing it and print its value
+let uninitializedVariable;
+console.log(uninitializedVariable); 
+
+// Task 19: Assign a number, string, and boolean value to a variable and print its type using typeof
+let numberValue = 42;
+let stringValue = "Hello, world!";
+let booleanValue = true;
+
+console.log(typeof numberValue); 
+console.log(typeof stringValue); 
+console.log(typeof booleanValue); 
+
+// Task 20: Rename a variable and observe the outcome
+let originalName = "This is the original name";
+let renamedVariable = originalName; 
+
+console.log(renamedVariable); 
+console.log(originalName);  
+
