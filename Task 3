@@ -1,17 +1,15 @@
 // Task 11: Without "use strict"
 console.log("Task 11: Without 'use strict'");
-undeclaredVariable = "This works without strict mode"; // Assigning to an undeclared variable
-console.log(undeclaredVariable); // This will work and create a global variable
+undeclaredVariable = "This works without strict mode"; 
+console.log(undeclaredVariable); 
 
 // Task 12: Enable "use strict"
 console.log("\nTask 12: With 'use strict'");
 "use strict";
-// Try to assign a value to an undeclared variable
 try {
-  undeclaredStrictVariable = "This will throw an error"; // This will throw a ReferenceError
+  undeclaredStrictVariable = "This will throw an error"; 
 } catch (error) {
-  console.log(error.message); // Logs: "undeclaredStrictVariable is not defined"
-}
+  console.log(error.message); 
 
 // Task 13: Delete a variable, function, or function parameter in "use strict"
 console.log("\nTask 13: Deleting a variable, function, or function parameter in 'use strict'");
@@ -21,17 +19,17 @@ function myFunction(param) {
   return param;
 }
 try {
-  delete myVariable; // Throws a SyntaxError
+  delete myVariable; 
 } catch (error) {
   console.log("Cannot delete variable:", error.message);
 }
 try {
-  delete myFunction; // Throws a SyntaxError
+  delete myFunction; 
 } catch (error) {
   console.log("Cannot delete function:", error.message);
 }
 try {
-  delete myFunction.length; // Throws a SyntaxError
+  delete myFunction.length; 
 } catch (error) {
   console.log("Cannot delete function parameter:", error.message);
 }
@@ -40,23 +38,22 @@ try {
 console.log("\nTask 14: Assigning to an undeclared variable");
 try {
   undeclaredVariableWithoutStrict = "Allowed without strict mode";
-  console.log(undeclaredVariableWithoutStrict); // Works without strict mode
+  console.log(undeclaredVariableWithoutStrict);
 } catch (error) {
   console.log(error.message);
 }
 
 "use strict"; // Enable strict mode
 try {
-  undeclaredVariableWithStrict = "Not allowed with strict mode"; // Throws a ReferenceError
+  undeclaredVariableWithStrict = "Not allowed with strict mode"; 
 } catch (error) {
-  console.log(error.message); // Logs: "undeclaredVariableWithStrict is not defined"
-}
+  console.log(error.message); 
 
 // Task 15: Declare a variable with a reserved keyword
 console.log("\nTask 15: Using a reserved keyword as a variable name in 'use strict'");
 "use strict";
 try {
-  var let = "Reserved keyword"; // Throws a SyntaxError
+  var let = "Reserved keyword"; 
 } catch (error) {
-  console.log(error.message); // Logs: "Unexpected strict mode reserved word"
+  console.log(error.message); 
 }
