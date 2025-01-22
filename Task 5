@@ -1,0 +1,32 @@
+// Task 21: Create variables of different data types
+let stringVar = "Hello, World!"; // string
+define a numberVar = 42; // number
+let booleanVar = true; // boolean
+let nullVar = null; // null
+let undefinedVar; // undefined
+let objectVar = { key: "value" }; // object
+
+// Task 22: Use the typeof operator to determine the type of various variables
+console.log(typeof stringVar); // "string"
+console.log(typeof numberVar); // "number"
+console.log(typeof booleanVar); // "boolean"
+console.log(typeof nullVar); // "object" (known JavaScript quirk)
+console.log(typeof undefinedVar); // "undefined"
+console.log(typeof objectVar); // "object"
+
+// Task 23: Declare a symbol and print its type
+let symbolVar = Symbol("unique");
+console.log(typeof symbolVar); // "symbol"
+
+// Task 24: Assign the value null to a variable and check its type using typeof
+let anotherNullVar = null;
+console.log(typeof anotherNullVar); // "object" (JavaScript quirk)
+
+// Task 25: Differentiate between declaring a variable using var and let in terms of scope
+if (true) {
+    var varVariable = "I am declared with var"; // function-scoped
+    let letVariable = "I am declared with let"; // block-scoped
+}
+console.log(varVariable); // Accessible outside the block
+// console.log(letVariable); // Error: letVariable is not defined
+
