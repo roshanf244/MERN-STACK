@@ -1,0 +1,72 @@
+// Task 46: Write a function that takes two numbers as arguments and returns their sum
+function task46() {
+    function addNumbers(num1, num2) {
+        return num1 + num2;
+    }
+
+    console.log("Task 46:");
+    console.log("Sum of 3 and 4:", addNumbers(3, 4));
+    console.log();
+}
+
+// Task 47: Create a function that calculates the area of a rectangle
+function task47() {
+    function calculateArea(length, width) {
+        return length * width;
+    }
+
+    console.log("Task 47:");
+    console.log("Area of rectangle (5, 10):", calculateArea(5, 10));
+    console.log();
+}
+
+// Task 48: Declare a function without parameters and call it
+function task48() {
+    function greet() {
+        console.log("Hello, world!");
+    }
+
+    console.log("Task 48:");
+    greet();
+    console.log();
+}
+
+// Task 49: Write a function that returns nothing and observe the default return value
+function task49() {
+    function doNothing() {
+        // Does nothing
+    }
+
+    console.log("Task 49:");
+    const result = doNothing();
+    console.log("Default return value:", result);
+    console.log();
+}
+
+// Task 50: Declare a function with default parameters and call it with different arguments
+function task50() {
+    function greetPerson(name = "Guest") {
+        console.log(`Hello, ${name}!`);
+    }
+
+    console.log("Task 50:");
+    greetPerson("Alice");
+    greetPerson();
+    console.log();
+}
+
+// Execute all tasks
+function main() {
+    task41();
+    task42();
+    task43();
+    task44();
+    task45();
+    task46();
+    task47();
+    task48();
+    task49();
+    task50();
+}
+
+main();
